@@ -1,0 +1,19 @@
+Configuring HDBC-odbc-2.5.0.1...
+Building HDBC-odbc-2.5.0.1...
+Preprocessing library HDBC-odbc-2.5.0.1...
+[ 1 of 11] Compiling Database.HDBC.ODBC.Log ( Database/HDBC/ODBC/Log.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Log.o )
+[ 2 of 11] Compiling Database.HDBC.ODBC.Api.Types ( .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Api/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Api/Types.o )
+[ 3 of 11] Compiling Database.HDBC.ODBC.Utils ( Database/HDBC/ODBC/Utils.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Utils.o )
+[ 4 of 11] Compiling Database.HDBC.ODBC.TypeConv ( .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/TypeConv.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/TypeConv.o )
+[ 5 of 11] Compiling Database.HDBC.ODBC.Api.Imports ( .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Api/Imports.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Api/Imports.o )
+[ 6 of 11] Compiling Database.HDBC.ODBC.Api.Errors ( Database/HDBC/ODBC/Api/Errors.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Api/Errors.o )
+[ 7 of 11] Compiling Database.HDBC.ODBC.Wrappers ( Database/HDBC/ODBC/Wrappers.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Wrappers.o )
+[ 8 of 11] Compiling Database.HDBC.ODBC.Statement ( .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Statement.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Statement.o )
+[ 9 of 11] Compiling Database.HDBC.ODBC.ConnectionImpl ( Database/HDBC/ODBC/ConnectionImpl.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/ConnectionImpl.o )
+[10 of 11] Compiling Database.HDBC.ODBC.Connection ( .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Connection.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC/Connection.o )
+[11 of 11] Compiling Database.HDBC.ODBC ( Database/HDBC/ODBC.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Database/HDBC/ODBC.o )
+In-place registering HDBC-odbc-2.5.0.1...
+Installing library in /home/carlos/Google Drive/Yachay/Semestre 7/Programacion
+Funcional/Webpage
+project/Webpage/.stack-work/install/x86_64-linux/lts-6.35/7.10.3/lib/x86_64-linux-ghc-7.10.3/HDBC-odbc-2.5.0.1-AU2wouKZqoAFByEMsSNNX0
+Registering HDBC-odbc-2.5.0.1...

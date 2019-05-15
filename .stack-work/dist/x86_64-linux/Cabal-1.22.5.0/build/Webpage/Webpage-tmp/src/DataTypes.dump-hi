@@ -1,0 +1,119 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-27 15:55:41.726617 UTC
+
+interface main@main:DataTypes 7103
+  interface hash: 8816c28f3a4cab64e230370eeaec4514
+  ABI hash: c515c5c67615ab236794dd2192172dc2
+  export-list hash: a276cd69047230c9aa6bca361c18ec86
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e59227a83bc9dafac3ee0b493a8208ec
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  DataTypes.Address
+  DataTypes.Cedula
+  DataTypes.ElectronicDevice
+  DataTypes.FirstName
+  DataTypes.GeographicalPosition
+  DataTypes.InternetAccess
+  DataTypes.LastName
+  DataTypes.Latitude
+  DataTypes.Local
+  DataTypes.LocalName
+  DataTypes.Local_has_Owner
+  DataTypes.Longitude
+  DataTypes.Number
+  DataTypes.Owner
+  DataTypes.Phone
+  DataTypes.PrincipalStreet
+  DataTypes.RUC
+  DataTypes.SecondaryStreet
+  DataTypes.SocialNetwork
+  DataTypes.Supplier
+  DataTypes.Type
+  DataTypes.URL
+  DataTypes.WebID
+  DataTypes.WebPage
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+8e5ec4c73ee571524a7101895024cacc
+  type Address =
+    (DataTypes.PrincipalStreet,
+     DataTypes.SecondaryStreet,
+     DataTypes.Number,
+     DataTypes.RUC)
+9cd84faa0edb103fa008bed63b0e13b0
+  type Cedula = GHC.Base.String
+ecd2f6d1a238886f99e7466766445297
+  type ElectronicDevice = GHC.Types.Bool
+d789c40593e187083152f5110b675f4a
+  type FirstName = GHC.Base.String
+140fc8f3ef4fb84c790c517fa608d863
+  type GeographicalPosition =
+    (DataTypes.Latitude, DataTypes.Longitude, DataTypes.Number)
+c7857f9323158e42c883c780cfbc4172
+  type InternetAccess = GHC.Types.Bool
+d9349f8ed5e062a10a21433a70bfca71
+  type LastName = GHC.Base.String
+a7628feaaf01772b225c72ae579235df
+  type Latitude = GHC.Base.String
+51bf8b28b3e813a4b5db75559f6d09c5
+  type Local =
+    (DataTypes.RUC,
+     DataTypes.LocalName,
+     DataTypes.Phone,
+     DataTypes.Type,
+     DataTypes.SocialNetwork,
+     DataTypes.InternetAccess,
+     DataTypes.WebID)
+ec1b873a14a0b2a243d8b7bb21404ebd
+  type LocalName = GHC.Base.String
+02f95ef97ce48c088eec61e76af7a9f2
+  type Local_has_Owner = (DataTypes.RUC, DataTypes.Cedula)
+822b961f40d0969c627aa1378ac548f7
+  type Longitude = GHC.Base.String
+25977015813ae1714a6a207f9f2c8b5b
+  type Number = GHC.Types.Int
+350e4f1ae72f6fb9c55b0cbdf96ca3c9
+  type Owner =
+    (DataTypes.Cedula,
+     DataTypes.FirstName,
+     DataTypes.LastName,
+     DataTypes.ElectronicDevice)
+0c269f05a6bb1a90d93e5928bd9c8043
+  type Phone = GHC.Base.String
+28ab7ace95c9a16735e686f6be539146
+  type PrincipalStreet = GHC.Base.String
+adbbab4dd3de12a9d7cf72afab605c06
+  type RUC = GHC.Types.Int
+779fc5ba614dc46f5bdeaa77f11866f1
+  type SecondaryStreet = GHC.Base.String
+0984fa161e7e56221f88a73a3ad8c042
+  type SocialNetwork = GHC.Base.String
+a8b9887d29b346ef55f191bae39c8da6
+  type Supplier = GHC.Base.String
+16fc001b5046cf8ec689fe82cf5b48dc
+  type Type = GHC.Base.String
+70d1c4b48538f9619c91446a1088bba2
+  type URL = GHC.Base.String
+768565b1845780d674974711629772af
+  type WebID = GHC.Types.Int
+293ccbf9b3d122770b9c81816b0f9ab4
+  type WebPage = (DataTypes.WebID, DataTypes.URL, DataTypes.Supplier)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,671 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-27 15:55:41.82015 UTC
+
+interface main@main:Functions 7103
+  interface hash: 835cdd70ac951f33a99e47fcfbe9382c
+  ABI hash: 7ea03a9d9cc141bbadb71752e18a19e3
+  export-list hash: 04a538a7af3b5eb369ba896ffe53e5d2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e59227a83bc9dafac3ee0b493a8208ec
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Functions.getAddress
+  Functions.getCedula
+  Functions.getCedulaFromOwner
+  Functions.getElectronicDevice
+  Functions.getFirstName
+  Functions.getGeographicalPosition
+  Functions.getInternetAccess
+  Functions.getLastName
+  Functions.getLatitude
+  Functions.getLocalName
+  Functions.getLocal_has_Owner
+  Functions.getLongitude
+  Functions.getNumber
+  Functions.getNumberFromGeographicalPosition
+  Functions.getOwner
+  Functions.getPhone
+  Functions.getPrincipalStreet
+  Functions.getRUC
+  Functions.getRUCFromAddress
+  Functions.getRUCFromLocal
+  Functions.getSecundaryStreet
+  Functions.getSocialNetwork
+  Functions.getSupplier
+  Functions.getType
+  Functions.getURL
+  Functions.getWebID
+  Functions.getWebIDFromLocal
+  Functions.getWebPage
+module dependencies: DataBaseLocals DataTypes
+package dependencies: HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6
+                      HDBC-sqlite3-2.3.3.1@HDBCs_FI4Ekte1XkB7wQBA0VkSDo
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0
+                      binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      old-locale-1.0.0.7@oldlo_7h2Gx6mVPJ5Gheca8j9Mpe
+                      old-time-1.1.0.3@oldti_JVjJvknZJ0JKghfag2Jw2L
+                      text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      utf8-string-1.0.1.1@utf8s_L8eKHa7Iv9q7FVKUYW6u4b
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.C
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Map
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Num
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Text
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Time
+         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text
+         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text.Lazy
+         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text
+                         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text.Lazy
+import  -/  HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6:Database.HDBC 7863c91d46f02d6ffdcae4bc00bdf652
+import  -/  HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6:Database.HDBC.SqlValue 247a4dba3ec10c1fca39c9330d3d0dd1
+import  -/  HDBC-sqlite3-2.3.3.1@HDBCs_FI4Ekte1XkB7wQBA0VkSDo:Database.HDBC.Sqlite3 888c7b9c4cf0a3377b250f7f04a9abb8
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  DataBaseLocals c35e6c600ca2b9b698a13692e6976a24
+  exports: 66c78eb7748e30c6c354917aa7fd3fea
+  consultarLocalsDB 148c46e42910caec3abfc8c78a222c76
+import  -/  DataTypes c515c5c67615ab236794dd2192172dc2
+  exports: a276cd69047230c9aa6bca361c18ec86
+  Address 8e5ec4c73ee571524a7101895024cacc
+  GeographicalPosition 140fc8f3ef4fb84c790c517fa608d863
+  Local 51bf8b28b3e813a4b5db75559f6d09c5
+  Local_has_Owner 02f95ef97ce48c088eec61e76af7a9f2
+  Owner 350e4f1ae72f6fb9c55b0cbdf96ca3c9
+  WebPage 293ccbf9b3d122770b9c81816b0f9ab4
+3e75010d7fe4340c0617653b6cbc36a4
+  $wa ::
+    DataTypes.RUC
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ ww :: DataTypes.RUC
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case DataBaseLocals.consultarLocalsDB2
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case Database.HDBC.Utils.quickQuery'1
+                        @ Database.HDBC.Sqlite3.ConnectionImpl.Connection
+                        Database.HDBC.Sqlite3.ConnectionImpl.$fIConnectionConnection
+                        ipv1
+                        (GHC.CString.unpackAppendCString#
+                           "SELECT * FROM Address WHERE RUC ="#
+                           (case ww of ww2 { GHC.Types.I# ww3 ->
+                            case GHC.Show.$wshowSignedInt
+                                   0
+                                   ww3
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                        (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ->
+                 case ds4 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, ipv3 #) } } } } }) -}
+c0c3ac0f27cc4f5155136ee06a872894
+  $wa1 ::
+    DataTypes.Number
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ ww :: DataTypes.Number
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case DataBaseLocals.consultarLocalsDB2
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case Database.HDBC.Utils.quickQuery'1
+                        @ Database.HDBC.Sqlite3.ConnectionImpl.Connection
+                        Database.HDBC.Sqlite3.ConnectionImpl.$fIConnectionConnection
+                        ipv1
+                        (GHC.CString.unpackAppendCString#
+                           "SELECT * FROM GeographicalPosition WHERE Number ="#
+                           (case ww of ww2 { GHC.Types.I# ww3 ->
+                            case GHC.Show.$wshowSignedInt
+                                   0
+                                   ww3
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                        (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ->
+                 case ds4 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, ipv3 #) } } } } }) -}
+f8ef5ba2172ba7cdfe9686f58f73ae0c
+  $wa2 ::
+    DataTypes.RUC
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ ww :: DataTypes.RUC
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case DataBaseLocals.consultarLocalsDB2
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case Database.HDBC.Utils.quickQuery'1
+                        @ Database.HDBC.Sqlite3.ConnectionImpl.Connection
+                        Database.HDBC.Sqlite3.ConnectionImpl.$fIConnectionConnection
+                        ipv1
+                        (GHC.CString.unpackAppendCString#
+                           "SELECT * FROM Owner WHERE RUC ="#
+                           (case ww of ww2 { GHC.Types.I# ww3 ->
+                            case GHC.Show.$wshowSignedInt
+                                   0
+                                   ww3
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                        (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ->
+                 case ds4 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, ipv3 #) } } } } }) -}
+ac772d73249d90401da05f4739e73d89
+  $wa3 ::
+    DataTypes.Cedula
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: [0],
+     Unfolding: (\ ww :: DataTypes.Cedula
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case DataBaseLocals.consultarLocalsDB2
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case Database.HDBC.Utils.quickQuery'1
+                        @ Database.HDBC.Sqlite3.ConnectionImpl.Connection
+                        Database.HDBC.Sqlite3.ConnectionImpl.$fIConnectionConnection
+                        ipv1
+                        (GHC.CString.unpackAppendCString#
+                           "SELECT * FROM Owner WHERE Cedula ="#
+                           ww)
+                        (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ->
+                 case ds4 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, ipv3 #) } } } } }) -}
+0b0f11f4936e4361a16f0d927c617892
+  $wa4 ::
+    DataTypes.WebID
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ ww :: DataTypes.WebID
+                   w :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case DataBaseLocals.consultarLocalsDB2
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case Database.HDBC.Utils.quickQuery'1
+                        @ Database.HDBC.Sqlite3.ConnectionImpl.Connection
+                        Database.HDBC.Sqlite3.ConnectionImpl.$fIConnectionConnection
+                        ipv1
+                        (GHC.CString.unpackAppendCString#
+                           "SELECT * FROM Owner WHERE WebID ="#
+                           (case ww of ww2 { GHC.Types.I# ww3 ->
+                            case GHC.Show.$wshowSignedInt
+                                   0
+                                   ww3
+                                   (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                            GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                        (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ->
+                 case ds4 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, ipv3 #) } } } } }) -}
+557195aaa8e94c89b2432051e1c2a2e5
+  getAddress ::
+    DataTypes.Local -> GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 2, Strictness: <S,1*U(1*U(U),A,A,A,A,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Functions.getAddress1
+                  `cast`
+                (<(DataTypes.RUC,
+                   DataTypes.LocalName,
+                   DataTypes.Phone,
+                   DataTypes.Type,
+                   DataTypes.SocialNetwork,
+                   DataTypes.InternetAccess,
+                   DataTypes.WebID)>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+917ed07ba14ece17532d6501f09c3f35
+  getAddress1 ::
+    (DataTypes.RUC,
+     DataTypes.LocalName,
+     DataTypes.Phone,
+     DataTypes.Type,
+     DataTypes.SocialNetwork,
+     DataTypes.InternetAccess,
+     DataTypes.WebID)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <S,1*U(1*U(U),A,A,A,A,A,A)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (DataTypes.RUC,
+                         DataTypes.LocalName,
+                         DataTypes.Phone,
+                         DataTypes.Type,
+                         DataTypes.SocialNetwork,
+                         DataTypes.InternetAccess,
+                         DataTypes.WebID)
+                   w1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w of ww { (,,,,,,) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                 Functions.$wa ww1 w1 }) -}
+57df3f4a7650359f1fda83fc2739c574
+  getCedula :: DataTypes.Local_has_Owner -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC, DataTypes.Cedula) ->
+                 case ds of wild { (,) ds1 b -> b }) -}
+2705e7c62913cb8f78a894677f90513d
+  getCedulaFromOwner :: DataTypes.Owner -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.Cedula,
+                          DataTypes.FirstName,
+                          DataTypes.LastName,
+                          DataTypes.ElectronicDevice) ->
+                 case ds of wild { (,,,) a ds1 ds2 ds3 -> a }) -}
+6a4c25d0a7118eab629c831c41125a67
+  getElectronicDevice :: DataTypes.Owner -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.Cedula,
+                          DataTypes.FirstName,
+                          DataTypes.LastName,
+                          DataTypes.ElectronicDevice) ->
+                 case ds of wild { (,,,) ds1 ds2 ds3 d -> d }) -}
+6c0e75e336dbe8ce9c13df648350bf9e
+  getFirstName :: DataTypes.Owner -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.Cedula,
+                          DataTypes.FirstName,
+                          DataTypes.LastName,
+                          DataTypes.ElectronicDevice) ->
+                 case ds of wild { (,,,) ds1 b ds2 ds3 -> b }) -}
+9e996c2ff7a25b02949ef453685bfd38
+  getGeographicalPosition ::
+    DataTypes.Address
+    -> GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 2, Strictness: <S,1*U(A,A,1*U(U),A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Functions.getGeographicalPosition1
+                  `cast`
+                (<(DataTypes.PrincipalStreet,
+                   DataTypes.SecondaryStreet,
+                   DataTypes.Number,
+                   DataTypes.RUC)>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+605d84c5c7b6cc46b602e43bb05c275b
+  getGeographicalPosition1 ::
+    (DataTypes.PrincipalStreet,
+     DataTypes.SecondaryStreet,
+     DataTypes.Number,
+     DataTypes.RUC)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <S,1*U(A,A,1*U(U),A)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (DataTypes.PrincipalStreet,
+                         DataTypes.SecondaryStreet,
+                         DataTypes.Number,
+                         DataTypes.RUC)
+                   w1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w of ww { (,,,) ww1 ww2 ww3 ww4 -> Functions.$wa1 ww3 w1 }) -}
+09215fea3d02dc267af53919bb62cad1
+  getInternetAccess :: DataTypes.Local -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSL),1*U(A,A,A,A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC,
+                          DataTypes.LocalName,
+                          DataTypes.Phone,
+                          DataTypes.Type,
+                          DataTypes.SocialNetwork,
+                          DataTypes.InternetAccess,
+                          DataTypes.WebID) ->
+                 case ds of wild { (,,,,,,) ds1 ds2 ds3 ds4 ds5 g ds6 -> g }) -}
+4019dd890424586d61fbf5c06d737eb7
+  getLastName :: DataTypes.Owner -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.Cedula,
+                          DataTypes.FirstName,
+                          DataTypes.LastName,
+                          DataTypes.ElectronicDevice) ->
+                 case ds of wild { (,,,) ds1 ds2 c ds3 -> c }) -}
+cb64330826a37cadea85562d9377e326
+  getLatitude :: DataTypes.GeographicalPosition -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.Latitude,
+                          DataTypes.Longitude,
+                          DataTypes.Number) ->
+                 case ds of wild { (,,) a ds1 ds2 -> a }) -}
+9561295c77e8b6b41d6bde90c9823e2b
+  getLocalName :: DataTypes.Local -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLL),1*U(A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC,
+                          DataTypes.LocalName,
+                          DataTypes.Phone,
+                          DataTypes.Type,
+                          DataTypes.SocialNetwork,
+                          DataTypes.InternetAccess,
+                          DataTypes.WebID) ->
+                 case ds of wild { (,,,,,,) ds1 b ds2 ds3 ds4 ds5 ds6 -> b }) -}
+5a975af0fa866f9bc4267d8803494d16
+  getLocal_has_Owner ::
+    DataTypes.Local -> GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 2, Strictness: <S,1*U(1*U(U),A,A,A,A,A,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Functions.getLocal_has_Owner1
+                  `cast`
+                (<(DataTypes.RUC,
+                   DataTypes.LocalName,
+                   DataTypes.Phone,
+                   DataTypes.Type,
+                   DataTypes.SocialNetwork,
+                   DataTypes.InternetAccess,
+                   DataTypes.WebID)>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+560834bf0224ad382aabd47c1921f09e
+  getLocal_has_Owner1 ::
+    (DataTypes.RUC,
+     DataTypes.LocalName,
+     DataTypes.Phone,
+     DataTypes.Type,
+     DataTypes.SocialNetwork,
+     DataTypes.InternetAccess,
+     DataTypes.WebID)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <S,1*U(1*U(U),A,A,A,A,A,A)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (DataTypes.RUC,
+                         DataTypes.LocalName,
+                         DataTypes.Phone,
+                         DataTypes.Type,
+                         DataTypes.SocialNetwork,
+                         DataTypes.InternetAccess,
+                         DataTypes.WebID)
+                   w1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w of ww { (,,,,,,) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                 Functions.$wa2 ww1 w1 }) -}
+eaca0f707fcde3e4e28ce81cdda4cbd7
+  getLongitude :: DataTypes.GeographicalPosition -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.Latitude,
+                          DataTypes.Longitude,
+                          DataTypes.Number) ->
+                 case ds of wild { (,,) ds1 b ds2 -> b }) -}
+323fffe98eef26eda377a2b29689cc4c
+  getNumber :: DataTypes.Address -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.PrincipalStreet,
+                          DataTypes.SecondaryStreet,
+                          DataTypes.Number,
+                          DataTypes.RUC) ->
+                 case ds of wild { (,,,) ds1 ds2 c ds3 -> c }) -}
+509fb78c27f05ca68cad8df5d58f232b
+  getNumberFromGeographicalPosition ::
+    DataTypes.GeographicalPosition -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.Latitude,
+                          DataTypes.Longitude,
+                          DataTypes.Number) ->
+                 case ds of wild { (,,) ds1 ds2 c -> c }) -}
+48d2beeb8fa573e17cc0258adf0201d8
+  getOwner ::
+    DataTypes.Local_has_Owner
+    -> GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 2, Strictness: <S,1*U(A,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Functions.getOwner1
+                  `cast`
+                (<(DataTypes.RUC, DataTypes.Cedula)>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+d3274ed40010da2a029af33a23ed3d44
+  getOwner1 ::
+    (DataTypes.RUC, DataTypes.Cedula)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <S,1*U(A,U)><L,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (DataTypes.RUC, DataTypes.Cedula)
+                   w1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w of ww { (,) ww1 ww2 -> Functions.$wa3 ww2 w1 }) -}
+242a10185bb0199242b8c80c5d744c28
+  getPhone :: DataTypes.Local -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLL),1*U(A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC,
+                          DataTypes.LocalName,
+                          DataTypes.Phone,
+                          DataTypes.Type,
+                          DataTypes.SocialNetwork,
+                          DataTypes.InternetAccess,
+                          DataTypes.WebID) ->
+                 case ds of wild { (,,,,,,) ds1 ds2 d ds3 ds4 ds5 ds6 -> d }) -}
+1892a29f21c9b9b0b9707d3e06aad789
+  getPrincipalStreet :: DataTypes.Address -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.PrincipalStreet,
+                          DataTypes.SecondaryStreet,
+                          DataTypes.Number,
+                          DataTypes.RUC) ->
+                 case ds of wild { (,,,) a ds1 ds2 ds3 -> a }) -}
+0341e37f48efa8158a353b02d46aab3c
+  getRUC :: DataTypes.Local_has_Owner -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC, DataTypes.Cedula) ->
+                 case ds of wild { (,) a ds1 -> a }) -}
+6469b5580ffb97618106c54218787618
+  getRUCFromAddress :: DataTypes.Address -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.PrincipalStreet,
+                          DataTypes.SecondaryStreet,
+                          DataTypes.Number,
+                          DataTypes.RUC) ->
+                 case ds of wild { (,,,) ds1 ds2 ds3 d -> d }) -}
+bbc8eebbee0168a590538424ca520916
+  getRUCFromLocal :: DataTypes.Local -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLL),1*U(1*U(U),A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC,
+                          DataTypes.LocalName,
+                          DataTypes.Phone,
+                          DataTypes.Type,
+                          DataTypes.SocialNetwork,
+                          DataTypes.InternetAccess,
+                          DataTypes.WebID) ->
+                 case ds of wild { (,,,,,,) a ds1 ds2 ds3 ds4 ds5 ds6 -> a }) -}
+f55ed8aa3b3f127b64eb47875348193d
+  getSecundaryStreet :: DataTypes.Address -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.PrincipalStreet,
+                          DataTypes.SecondaryStreet,
+                          DataTypes.Number,
+                          DataTypes.RUC) ->
+                 case ds of wild { (,,,) ds1 b ds2 ds3 -> b }) -}
+b625d9adfdcbdabeeb924aa7fa13b421
+  getSocialNetwork :: DataTypes.Local -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLL),1*U(A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC,
+                          DataTypes.LocalName,
+                          DataTypes.Phone,
+                          DataTypes.Type,
+                          DataTypes.SocialNetwork,
+                          DataTypes.InternetAccess,
+                          DataTypes.WebID) ->
+                 case ds of wild { (,,,,,,) ds1 ds2 ds3 ds4 f ds5 ds6 -> f }) -}
+9926dfa57acd343b9e2e34687243b847
+  getSupplier :: DataTypes.WebPage -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.WebID, DataTypes.URL, DataTypes.Supplier) ->
+                 case ds of wild { (,,) ds1 ds2 c -> c }) -}
+26afd70d42081e7f340966d857a03061
+  getType :: DataTypes.Local -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLL),1*U(A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC,
+                          DataTypes.LocalName,
+                          DataTypes.Phone,
+                          DataTypes.Type,
+                          DataTypes.SocialNetwork,
+                          DataTypes.InternetAccess,
+                          DataTypes.WebID) ->
+                 case ds of wild { (,,,,,,) ds1 ds2 ds3 e ds4 ds5 ds6 -> e }) -}
+f69f5cd4412aab58fb8beb8fa626b932
+  getURL :: DataTypes.WebPage -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.WebID, DataTypes.URL, DataTypes.Supplier) ->
+                 case ds of wild { (,,) ds1 b ds2 -> b }) -}
+9938b3e54983da34a2b46d89850579d9
+  getWebID :: DataTypes.WebPage -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U(U),A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.WebID, DataTypes.URL, DataTypes.Supplier) ->
+                 case ds of wild { (,,) a ds1 ds2 -> a }) -}
+5e9a015ba57a85e3413d731eca2bb362
+  getWebIDFromLocal :: DataTypes.Local -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLS),1*U(A,A,A,A,A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: (DataTypes.RUC,
+                          DataTypes.LocalName,
+                          DataTypes.Phone,
+                          DataTypes.Type,
+                          DataTypes.SocialNetwork,
+                          DataTypes.InternetAccess,
+                          DataTypes.WebID) ->
+                 case ds of wild { (,,,,,,) ds1 ds2 ds3 ds4 ds5 ds6 h -> h }) -}
+49362029052c84e0f55aa62fda548f07
+  getWebPage ::
+    DataTypes.Local -> GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 2, Strictness: <S,1*U(A,A,A,A,A,A,1*U(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Functions.getWebPage1
+                  `cast`
+                (<(DataTypes.RUC,
+                   DataTypes.LocalName,
+                   DataTypes.Phone,
+                   DataTypes.Type,
+                   DataTypes.SocialNetwork,
+                   DataTypes.InternetAccess,
+                   DataTypes.WebID)>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+856f5361aec9e27a0de23301f76f8408
+  getWebPage1 ::
+    (DataTypes.RUC,
+     DataTypes.LocalName,
+     DataTypes.Phone,
+     DataTypes.Type,
+     DataTypes.SocialNetwork,
+     DataTypes.InternetAccess,
+     DataTypes.WebID)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <S,1*U(A,A,A,A,A,A,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (DataTypes.RUC,
+                         DataTypes.LocalName,
+                         DataTypes.Phone,
+                         DataTypes.Type,
+                         DataTypes.SocialNetwork,
+                         DataTypes.InternetAccess,
+                         DataTypes.WebID)
+                   w1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w of ww { (,,,,,,) ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                 Functions.$wa4 ww7 w1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

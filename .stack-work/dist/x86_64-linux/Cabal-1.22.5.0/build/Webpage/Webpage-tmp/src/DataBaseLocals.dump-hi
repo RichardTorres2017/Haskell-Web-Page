@@ -1,0 +1,980 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-27 15:55:41.65767 UTC
+
+interface main@main:DataBaseLocals 7103
+  interface hash: 93f683a8d3ffde5ce2310707be79ca9c
+  ABI hash: c35e6c600ca2b9b698a13692e6976a24
+  export-list hash: 66c78eb7748e30c6c354917aa7fd3fea
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e59227a83bc9dafac3ee0b493a8208ec
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  DataBaseLocals.actualizarLocalsDB
+  DataBaseLocals.borrarLocalsDB
+  DataBaseLocals.consulta1
+  DataBaseLocals.consulta2
+  DataBaseLocals.consulta3
+  DataBaseLocals.consultarLocalsDB
+  DataBaseLocals.crearLocalsDB
+  DataBaseLocals.eliminarLocalsDB
+  DataBaseLocals.infoConexionLocalsDB
+  DataBaseLocals.infoLocalsDB
+  DataBaseLocals.insertarLocalsDB
+  DataBaseLocals.tablaLocalsDB
+  DataBaseLocals.tablaLocalsDB'
+module dependencies:
+package dependencies: HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6
+                      HDBC-sqlite3-2.3.3.1@HDBCs_FI4Ekte1XkB7wQBA0VkSDo
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA base-4.8.2.0
+                      binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59 ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      old-locale-1.0.0.7@oldlo_7h2Gx6mVPJ5Gheca8j9Mpe
+                      old-time-1.1.0.3@oldti_JVjJvknZJ0JKghfag2Jw2L
+                      text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      utf8-string-1.0.1.1@utf8s_L8eKHa7Iv9q7FVKUYW6u4b
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.C
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Map
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Num
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Text
+         convertible-1.1.1.0@conve_60Q7MPO9pU3BAIsl31facb:Data.Convertible.Instances.Time
+         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text
+         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text.Lazy
+         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text
+                         text-1.2.2.2@text_HNxyN9jbP071NwSM0l4WIz:Data.Text.Lazy
+import  -/  HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6:Database.HDBC 7863c91d46f02d6ffdcae4bc00bdf652
+import  -/  HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6:Database.HDBC.SqlValue 247a4dba3ec10c1fca39c9330d3d0dd1
+import  -/  HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6:Database.HDBC.Statement d82dbdb2870f74339a8961d7335330be
+import  -/  HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6:Database.HDBC.Types 012341bca4bda4575f7046629d2619a0
+import  -/  HDBC-2.4.0.1@HDBC_9gp4W6EcUh96bGVH4Tges6:Database.HDBC.Utils 0eb5bd29fe9de7f66abbf0dddd4c35e7
+import  -/  HDBC-sqlite3-2.3.3.1@HDBCs_FI4Ekte1XkB7wQBA0VkSDo:Database.HDBC.Sqlite3 888c7b9c4cf0a3377b250f7f04a9abb8
+import  -/  HDBC-sqlite3-2.3.3.1@HDBCs_FI4Ekte1XkB7wQBA0VkSDo:Database.HDBC.Sqlite3.Connection b015f656b97662dffd2f64a69069827e
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+47a3ca023dcc6558e0b1abb1d2d82485
+  actualizarLocalsDB :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.actualizarLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+aa06b4c29accfedea34770c481c62391
+  actualizarLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case (Database.HDBC.Sqlite3.Connection.genericConnect
+                         Database.HDBC.Sqlite3.Connection.connectSqlite1
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R <Foreign.C.String.CString
+                                -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0]
+                                        <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                         DataBaseLocals.actualizarLocalsDB3)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 case (ds5
+                         DataBaseLocals.actualizarLocalsDB2
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv of ds18 { (#,#) ipv2 ipv3 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 ds2 `cast` (GHC.Types.NTCo:IO[0] <()>_R) ipv4 } } } }) -}
+47f88234a4467da2a200d64854a72060
+  actualizarLocalsDB2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "UPDATE WebPage SET URL = 'www.yahoo.com' WHERE webID = '1246646'"#) -}
+4430bace29c2b21685fb3256e71329e2
+  actualizarLocalsDB3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "LocalsDB.db"#) -}
+7941f855d528c791e302ce1c3cb15d51
+  borrarLocalsDB :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.borrarLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+b9822c484e928d6dad0d770c3854d9c2
+  borrarLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case (Database.HDBC.Sqlite3.Connection.genericConnect
+                         Database.HDBC.Sqlite3.Connection.connectSqlite1
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R <Foreign.C.String.CString
+                                -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0]
+                                        <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                         DataBaseLocals.actualizarLocalsDB3)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 case (ds5
+                         DataBaseLocals.borrarLocalsDB6
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv of ds18 { (#,#) ipv2 ipv3 ->
+                 case (ds5
+                         DataBaseLocals.borrarLocalsDB5
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case (ds5
+                         DataBaseLocals.borrarLocalsDB5
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 case (ds5
+                         DataBaseLocals.borrarLocalsDB4
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv6 of ds21 { (#,#) ipv8 ipv9 ->
+                 case (ds5
+                         DataBaseLocals.borrarLocalsDB3
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv8 of ds22 { (#,#) ipv10 ipv11 ->
+                 case (ds5
+                         DataBaseLocals.borrarLocalsDB2
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv10 of ds23 { (#,#) ipv12 ipv13 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv12 of ds24 { (#,#) ipv14 ipv15 ->
+                 ds2 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                   ipv14 } } } } } } } } }) -}
+beaf1a977c08ee895eb2b5c71d215b71
+  borrarLocalsDB2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DROP TABLE Owner"#) -}
+6c4e2e6bc832a03b7cb5fdcc12acf605
+  borrarLocalsDB3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "DROP TABLE Local_has_Owner"#) -}
+0dc1634536af78a74403733fc0545f94
+  borrarLocalsDB4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DROP TABLE Local"#) -}
+581de9824b75db1a7a0f9bce9361710b
+  borrarLocalsDB5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DROP TABLE Address"#) -}
+2646d4ae325b80ebfb68faff815f2a9e
+  borrarLocalsDB6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "DROP TABLE GeographicalPosition"#) -}
+72f14e4fc6eb590023516b9af52e84de
+  consulta1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "SELECT * FROM WebPage ORDER BY Supplier"#) -}
+8f3a7c165bf042e7a1ce783016ba9907
+  consulta2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "SELECT RUC, LocalName FROM Local"#) -}
+233b276711786df6c16751939b486471
+  consulta3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "SELECT LocalName, PrincipalStreet, SecundaryStreet FROM Local, Address ORDER BY LocalName"#) -}
+148c46e42910caec3abfc8c78a222c76
+  consultarLocalsDB ::
+    GHC.Base.String -> GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.consultarLocalsDB1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+a30c4ef88c5a49dfe97b4c43f3820599
+  consultarLocalsDB1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ consulta :: GHC.Base.String
+                   s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case DataBaseLocals.consultarLocalsDB2
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Database.HDBC.Utils.quickQuery'1
+                        @ Database.HDBC.Sqlite3.ConnectionImpl.Connection
+                        Database.HDBC.Sqlite3.ConnectionImpl.$fIConnectionConnection
+                        ipv1
+                        consulta
+                        (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ->
+                 case ds4 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 (# ipv6, ipv3 #) } } } } }) -}
+f27fa4d75e0ee787d3fa381234e013f4
+  consultarLocalsDB2 ::
+    GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection
+  {- Unfolding: (Database.HDBC.Sqlite3.Connection.genericConnect
+                   Database.HDBC.Sqlite3.Connection.connectSqlite1
+                     `cast`
+                   (<GHC.Base.String>_R
+                    ->_R <Foreign.C.String.CString
+                          -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0]
+                                  <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                   DataBaseLocals.actualizarLocalsDB3) -}
+f1ad037b48e0195ce06908a2cf74625f
+  crearLocalsDB :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.crearLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+228a5660b5846d80f0dbcccf62acf97a
+  crearLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case (Database.HDBC.Sqlite3.Connection.genericConnect
+                         Database.HDBC.Sqlite3.Connection.connectSqlite1
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R <Foreign.C.String.CString
+                                -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0]
+                                        <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                         DataBaseLocals.actualizarLocalsDB3)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 case (ds5
+                         DataBaseLocals.crearLocalsDB7
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv of ds18 { (#,#) ipv2 ipv3 ->
+                 case (ds5
+                         DataBaseLocals.crearLocalsDB6
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case (ds5
+                         DataBaseLocals.crearLocalsDB5
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 case (ds5
+                         DataBaseLocals.crearLocalsDB4
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv6 of ds21 { (#,#) ipv8 ipv9 ->
+                 case (ds5
+                         DataBaseLocals.crearLocalsDB3
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv8 of ds22 { (#,#) ipv10 ipv11 ->
+                 case (ds5
+                         DataBaseLocals.crearLocalsDB2
+                         (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv10 of ds23 { (#,#) ipv12 ipv13 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv12 of ds24 { (#,#) ipv14 ipv15 ->
+                 ds2 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                   ipv14 } } } } } } } } }) -}
+e50ff851d372087453b7137e109be408
+  crearLocalsDB2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CREATE TABLE Local_has_Owner (RUC INTEGER REFERENCES Local(RUC), Cedula VARCHAR(10) REFERENCES Owner(Cedula))"#) -}
+284420aee0acef03f078a34c86d8a32b
+  crearLocalsDB3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CREATE TABLE Local (RUC INTEGER PRIMARY KEY, LocalName VARCHAR(30), Phone VARCHAR(30), Type VARCHAR(30), SocialNetwork VARCHAR(30), InternetAccess BOOLEAN, WebID INTEGER REFERENCES WebPage(WebID))"#) -}
+15cb19fe505e44b5032d81aa4dd36ca3
+  crearLocalsDB4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CREATE TABLE WebPage (WebID INTEGER PRIMARY KEY, Supplier VARCHAR(30), URL VARCHAR(50))"#) -}
+47c113953c6669894c94fc88dbd5b0b7
+  crearLocalsDB5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CREATE TABLE GeographicalPosition (Latitud VARCHAR(20), Longitud VARCHAR(20), Number INTEGER REFERENCES Address(Number))"#) -}
+37afd1e4805241098d866566ee445203
+  crearLocalsDB6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CREATE TABLE Address (Number INTEGER PRIMARY KEY, PrincipalStreet VARCHAR(30), SecundaryStreet VARCHAR(30), RUC INTEGER REFERENCES Local(RUC))"#) -}
+c96d4f4ef1cdc84589b4dd217cc5b7d0
+  crearLocalsDB7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CREATE TABLE Owner (Cedula VARCHAR(10) PRIMARY KEY, FirstName VARCHAR(30), LastName VARCHAR(30), ElectronicDevice BOOLEAN)"#) -}
+52f153316adf4ba1ad61a86634cd648f
+  eliminarLocalsDB :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.eliminarLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+1af8b12413faf5ded230f9b1a3b19e08
+  eliminarLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case (Database.HDBC.Sqlite3.Connection.genericConnect
+                         Database.HDBC.Sqlite3.Connection.connectSqlite1
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R <Foreign.C.String.CString
+                                -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0]
+                                        <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                         DataBaseLocals.actualizarLocalsDB3)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 case (ds5
+                         DataBaseLocals.eliminarLocalsDB5
+                         DataBaseLocals.eliminarLocalsDB2)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)
+                        ipv of ds18 { (#,#) ipv2 ipv3 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 ds2 `cast` (GHC.Types.NTCo:IO[0] <()>_R) ipv4 } } } }) -}
+acaf4878a83b19dfcc97916c247d1434
+  eliminarLocalsDB2 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.eliminarLocalsDB3
+                   (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)) -}
+4fc5a4b2e4f965f92f1ebb6d02e218c8
+  eliminarLocalsDB3 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (case Data.Convertible.Instances.Num.$fConvertibleIntInt64_$csafeConvert
+                        DataBaseLocals.eliminarLocalsDB4 of wild {
+                   Data.Either.Left l
+                   -> case l of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      Data.Convertible.Base.convert2
+                        @ Database.HDBC.SqlValue.SqlValue
+                        ww1
+                        ww2
+                        ww3
+                        ww4 }
+                   Data.Either.Right r -> Database.HDBC.SqlValue.SqlInt64 r }) -}
+bb70a825af72dbdbef1c6a3ade394d9e
+  eliminarLocalsDB4 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 123) -}
+d7cf326e97b65cce0200f26928c9f31d
+  eliminarLocalsDB5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "DELETE FROM Webpage WHERE WebID = ? "#) -}
+fd81ae4e271568e3d2666f07605696c2
+  infoConexionLocalsDB :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.infoConexionLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+9fadd9b630daad630ee3cae59be82c4e
+  infoConexionLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U> -}
+dab54fa012f7217ee03019b7cc59017a
+  infoLocalsDB :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.infoLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+9c8a92c4dcfe9ca06e4bea9504f52a5c
+  infoLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case (Database.HDBC.Sqlite3.Connection.genericConnect
+                         Database.HDBC.Sqlite3.Connection.connectSqlite1
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R <Foreign.C.String.CString
+                                -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0]
+                                        <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                         DataBaseLocals.actualizarLocalsDB3)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 case ds15 `cast` (GHC.Types.NTCo:IO[0] <[GHC.Base.String]>_R)
+                        ipv of ds18 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (DataBaseLocals.infoLocalsDB_go ipv3)
+                        GHC.Types.False
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 ds2 `cast` (GHC.Types.NTCo:IO[0] <()>_R) ipv4 } } } }) -}
+a3e46cc17d4153763d5b744c1e0fbed4
+  infoLocalsDB_go :: [[GHC.Types.Char]] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+aab83bdd8fd927c178a50fb9802add3e
+  insertarLocalsDB :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.insertarLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+38ca5544fc3e542271760b241c847063
+  insertarLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case (Database.HDBC.Sqlite3.Connection.genericConnect
+                         Database.HDBC.Sqlite3.Connection.connectSqlite1
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R <Foreign.C.String.CString
+                                -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0]
+                                        <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                         DataBaseLocals.actualizarLocalsDB3)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ->
+                 case (ds7 DataBaseLocals.insertarLocalsDB69)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <Database.HDBC.Statement.Statement>_R)
+                        ipv of ds18 { (#,#) ipv2 ipv3 ->
+                 case (ds7 DataBaseLocals.insertarLocalsDB68)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <Database.HDBC.Statement.Statement>_R)
+                        ipv2 of ds19 { (#,#) ipv4 ipv5 ->
+                 case (ds7 DataBaseLocals.insertarLocalsDB67)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <Database.HDBC.Statement.Statement>_R)
+                        ipv4 of ds20 { (#,#) ipv6 ipv7 ->
+                 case (ds7 DataBaseLocals.insertarLocalsDB66)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <Database.HDBC.Statement.Statement>_R)
+                        ipv6 of ds21 { (#,#) ipv8 ipv9 ->
+                 case (ds7 DataBaseLocals.insertarLocalsDB65)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <Database.HDBC.Statement.Statement>_R)
+                        ipv8 of ds22 { (#,#) ipv10 ipv11 ->
+                 case (ds7 DataBaseLocals.insertarLocalsDB64)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <Database.HDBC.Statement.Statement>_R)
+                        ipv10 of ds23 { (#,#) ipv12 ipv13 ->
+                 case ipv3 of wild1 { Database.HDBC.Statement.Statement ds24 ds25 ds26 ds27 ds28 ds29 ds30 ds31 ->
+                 case (ds26 DataBaseLocals.insertarLocalsDB55)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv12 of ds32 { (#,#) ipv14 ipv15 ->
+                 case ipv5 of wild2 { Database.HDBC.Statement.Statement ds33 ds34 ds35 ds36 ds37 ds38 ds39 ds40 ->
+                 case (ds35 DataBaseLocals.insertarLocalsDB46)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv14 of ds41 { (#,#) ipv16 ipv17 ->
+                 case ipv7 of wild3 { Database.HDBC.Statement.Statement ds42 ds43 ds44 ds45 ds46 ds47 ds48 ds49 ->
+                 case (ds44 DataBaseLocals.insertarLocalsDB36)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv16 of ds50 { (#,#) ipv18 ipv19 ->
+                 case ipv9 of wild4 { Database.HDBC.Statement.Statement ds51 ds52 ds53 ds54 ds55 ds56 ds57 ds58 ->
+                 case (ds53 DataBaseLocals.insertarLocalsDB28)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv18 of ds59 { (#,#) ipv20 ipv21 ->
+                 case ipv11 of wild5 { Database.HDBC.Statement.Statement ds60 ds61 ds62 ds63 ds64 ds65 ds66 ds67 ->
+                 case (ds62 DataBaseLocals.insertarLocalsDB9)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv20 of ds68 { (#,#) ipv22 ipv23 ->
+                 case ipv13 of wild6 { Database.HDBC.Statement.Statement ds69 ds70 ds71 ds72 ds73 ds74 ds75 ds76 ->
+                 case (ds71 DataBaseLocals.insertarLocalsDB2)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv22 of ds77 { (#,#) ipv24 ipv25 ->
+                 case ds3 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv24 of ds78 { (#,#) ipv26 ipv27 ->
+                 ds2 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                   ipv26 } } } } } } } } } } } } } } } } } } } } }) -}
+f84ed829917ea12441481bdbad0279ff
+  insertarLocalsDB10 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB7
+                   DataBaseLocals.insertarLocalsDB11) -}
+516d7a38555f320b11a5fff669be6f13
+  insertarLocalsDB11 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB26
+                   DataBaseLocals.insertarLocalsDB12) -}
+b34c0f59151377df6c056381b858cb0c
+  insertarLocalsDB12 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB24
+                   DataBaseLocals.insertarLocalsDB13) -}
+f16f2d63a26f7ccd37d533d5736fa46a
+  insertarLocalsDB13 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB22
+                   DataBaseLocals.insertarLocalsDB14) -}
+32707735f25065e767a9baa321f05b63
+  insertarLocalsDB14 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB20
+                   DataBaseLocals.insertarLocalsDB15) -}
+7bf0334dc3df4f90cd4f6ea49993972b
+  insertarLocalsDB15 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB19
+                   DataBaseLocals.insertarLocalsDB16) -}
+50906a4c47a201adb85cb33045563da5
+  insertarLocalsDB16 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB17
+                   (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)) -}
+21024638a18033eb75f2fc1f8591ef6c
+  insertarLocalsDB17 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (case Data.Convertible.Instances.Num.$fConvertibleIntInt64_$csafeConvert
+                        DataBaseLocals.insertarLocalsDB18 of wild {
+                   Data.Either.Left l
+                   -> case l of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      Data.Convertible.Base.convert2
+                        @ Database.HDBC.SqlValue.SqlValue
+                        ww1
+                        ww2
+                        ww3
+                        ww4 }
+                   Data.Either.Right r -> Database.HDBC.SqlValue.SqlInt64 r }) -}
+485d2cc4b00bf0654f884945d687e363
+  insertarLocalsDB18 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1246646) -}
+e9f8a9f2cecd916bcde95591205cff06
+  insertarLocalsDB19 :: Database.HDBC.SqlValue.SqlValue
+  {- HasNoCafRefs,
+     Unfolding: (Database.HDBC.SqlValue.SqlBool GHC.Types.True) -}
+f89af529928909296bb4b1063e6344e9
+  insertarLocalsDB2 :: [[Database.HDBC.SqlValue.SqlValue]]
+  {- Unfolding: (GHC.Types.:
+                   @ [Database.HDBC.SqlValue.SqlValue]
+                   DataBaseLocals.insertarLocalsDB3
+                   (GHC.Types.[] @ [Database.HDBC.SqlValue.SqlValue])) -}
+0b67ba1b055f2de962abd9880985c96e
+  insertarLocalsDB20 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB21) -}
+81a9b505ae3d311cc4895039a3cd7d03
+  insertarLocalsDB21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "facebook"#) -}
+5699a595e26f6b19020811223c547f23
+  insertarLocalsDB22 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB23) -}
+abb90249fe26a1260cd722bf3734ab2b
+  insertarLocalsDB23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Bazar"#) -}
+f4b6a9a83f6db762a17ba3a5719a0a53
+  insertarLocalsDB24 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB25) -}
+d6cdc20fff442f1438e471b4b6bacd78
+  insertarLocalsDB25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "0983664765"#) -}
+a669c0b1825ced5cf0f71a4e5c97ce18
+  insertarLocalsDB26 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB27) -}
+d9a8b9dd986509e074b576ea03d7db1d
+  insertarLocalsDB27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Tienda de Pedro"#) -}
+81569fea43aa0df7103fd64b3e6838fc
+  insertarLocalsDB28 :: [[Database.HDBC.SqlValue.SqlValue]]
+  {- Unfolding: (GHC.Types.:
+                   @ [Database.HDBC.SqlValue.SqlValue]
+                   DataBaseLocals.insertarLocalsDB29
+                   (GHC.Types.[] @ [Database.HDBC.SqlValue.SqlValue])) -}
+6943e63f2d425bd84acf25d3726ea56a
+  insertarLocalsDB29 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB17
+                   DataBaseLocals.insertarLocalsDB30) -}
+62b97b5f572ff8454afc6df06317f331
+  insertarLocalsDB3 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB7
+                   DataBaseLocals.insertarLocalsDB4) -}
+f2db081cc9a5227d1cc85a8701405096
+  insertarLocalsDB30 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB34
+                   DataBaseLocals.insertarLocalsDB31) -}
+230fc6a0723274073909408b8ba45175
+  insertarLocalsDB31 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB32
+                   (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)) -}
+2908071b288f49b157d4c03d8be30090
+  insertarLocalsDB32 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB33) -}
+dfe8c51b870bd97ed71a3dd6ab91655f
+  insertarLocalsDB33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "www.google.com"#) -}
+d8885b595195d3bbf995c2221b01071d
+  insertarLocalsDB34 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB35) -}
+c220c9580409fc202a89a6eef5f95018
+  insertarLocalsDB35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Google"#) -}
+dddfbabf5952855476e86ec7fd7b4e9b
+  insertarLocalsDB36 :: [[Database.HDBC.SqlValue.SqlValue]]
+  {- Unfolding: (GHC.Types.:
+                   @ [Database.HDBC.SqlValue.SqlValue]
+                   DataBaseLocals.insertarLocalsDB37
+                   (GHC.Types.[] @ [Database.HDBC.SqlValue.SqlValue])) -}
+dac9c95c3719f08060eb7904433cb668
+  insertarLocalsDB37 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB44
+                   DataBaseLocals.insertarLocalsDB38) -}
+b9e4128d61fbe18a20efabb945c3c2aa
+  insertarLocalsDB38 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB42
+                   DataBaseLocals.insertarLocalsDB39) -}
+d528515cfc5f8866837340a459d5b1b2
+  insertarLocalsDB39 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB40
+                   (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)) -}
+964a8cf51f83934831bd122f77c92785
+  insertarLocalsDB4 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB5
+                   (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)) -}
+8999f6c86a573415c6298ed87856138e
+  insertarLocalsDB40 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (case Data.Convertible.Instances.Num.$fConvertibleIntInt64_$csafeConvert
+                        DataBaseLocals.insertarLocalsDB41 of wild {
+                   Data.Either.Left l
+                   -> case l of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      Data.Convertible.Base.convert2
+                        @ Database.HDBC.SqlValue.SqlValue
+                        ww1
+                        ww2
+                        ww3
+                        ww4 }
+                   Data.Either.Right r -> Database.HDBC.SqlValue.SqlInt64 r }) -}
+85d38810c796f35340b6dabcc504b04a
+  insertarLocalsDB41 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 234) -}
+be2301269fb1cd5ffa2a3f950613d67b
+  insertarLocalsDB42 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB43) -}
+9a0585054f57409b9968ce226c4151ae
+  insertarLocalsDB43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "34 7 5"#) -}
+c6b274bac9041f16dead0cbf43e26892
+  insertarLocalsDB44 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB45) -}
+1b8a1a62b583bc8ccf12505ee2add433
+  insertarLocalsDB45 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "78 48 6"#) -}
+073b13b88a3df271dfd487553cf7bb35
+  insertarLocalsDB46 :: [[Database.HDBC.SqlValue.SqlValue]]
+  {- Unfolding: (GHC.Types.:
+                   @ [Database.HDBC.SqlValue.SqlValue]
+                   DataBaseLocals.insertarLocalsDB47
+                   (GHC.Types.[] @ [Database.HDBC.SqlValue.SqlValue])) -}
+ddce45ccc4974fddd7f0c70e8e268efd
+  insertarLocalsDB47 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB40
+                   DataBaseLocals.insertarLocalsDB48) -}
+0c7bb79225fafe306aa723d4963429c1
+  insertarLocalsDB48 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB53
+                   DataBaseLocals.insertarLocalsDB49) -}
+c5dbd45414399c8cd9b119efa64a3f8e
+  insertarLocalsDB49 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB51
+                   DataBaseLocals.insertarLocalsDB50) -}
+cbcf5d042a103843fa0ad3dad8d89ea7
+  insertarLocalsDB5 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB6) -}
+e9b1d83b4662ddee1ddb591a52486626
+  insertarLocalsDB50 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB7
+                   (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)) -}
+2f030044902981d328e0bf6400c148d3
+  insertarLocalsDB51 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB52) -}
+0dc97beb89fec9d8f6cb6711c0bf1f15
+  insertarLocalsDB52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Guayaquil"#) -}
+ef00053dce7faf46f1f3bc67fda586c2
+  insertarLocalsDB53 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB54) -}
+dbbf5a7d37fe14006612bd6d85fe2af0
+  insertarLocalsDB54 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Pedro Moncayo"#) -}
+acc059f00ad36bd8acb7fe38c5157e64
+  insertarLocalsDB55 :: [[Database.HDBC.SqlValue.SqlValue]]
+  {- Unfolding: (GHC.Types.:
+                   @ [Database.HDBC.SqlValue.SqlValue]
+                   DataBaseLocals.insertarLocalsDB56
+                   (GHC.Types.[] @ [Database.HDBC.SqlValue.SqlValue])) -}
+f8867572f0687d93c8026eef661d448e
+  insertarLocalsDB56 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB5
+                   DataBaseLocals.insertarLocalsDB57) -}
+faab3090def960da8484770f7c4e3f3c
+  insertarLocalsDB57 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB62
+                   DataBaseLocals.insertarLocalsDB58) -}
+0c44c736b98637285609665443d59ca2
+  insertarLocalsDB58 :: [Database.HDBC.SqlValue.SqlValue]
+  {- Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB60
+                   DataBaseLocals.insertarLocalsDB59) -}
+b4b47035ef8271d0c5ccd18bf44f84bd
+  insertarLocalsDB59 :: [Database.HDBC.SqlValue.SqlValue]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Database.HDBC.SqlValue.SqlValue
+                   DataBaseLocals.insertarLocalsDB19
+                   (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)) -}
+ad0947bc5a0b9fc23fa2d90ae7da5d67
+  insertarLocalsDB6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "0367745639"#) -}
+cbe76e29e801b3e6d6abd2236c9c3798
+  insertarLocalsDB60 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB61) -}
+244d006132124792fa8a4511bf13cc5d
+  insertarLocalsDB61 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Torres"#) -}
+197a822fc113f4f56552bc7daae57147
+  insertarLocalsDB62 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (Database.HDBC.SqlValue.SqlString
+                   DataBaseLocals.insertarLocalsDB63) -}
+8daac3dda784271ecc9667b6504e88b8
+  insertarLocalsDB63 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Francisco"#) -}
+a6e51b0a4b79f3a5cb29e17f94d6b99c
+  insertarLocalsDB64 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "INSERT INTO Local_has_Owner VALUES (?, ?)"#) -}
+7de969a4a16dcd657920670a30190d42
+  insertarLocalsDB65 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "INSERT INTO Local VALUES (?, ?, ?, ?, ?, ? ,?)"#) -}
+8477c8c60ac991643c4fceff080f5755
+  insertarLocalsDB66 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "INSERT INTO WebPage VALUES (?, ?, ?)"#) -}
+3cb7c5ed2122be4a0d2dd979e36d92db
+  insertarLocalsDB67 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "INSERT INTO GeographicalPosition VALUES (?, ?, ?)"#) -}
+e3ec89af3f664753fa3526f560bd2db5
+  insertarLocalsDB68 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "INSERT INTO Address VALUES (?, ?, ?, ?)"#) -}
+3845d5fec1c1e17f3e3babba33ad8d22
+  insertarLocalsDB69 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "INSERT INTO Owner VALUES (?, ?, ?, ?)"#) -}
+fb83dbcdc08ae2d30129a3fa0ce63ec8
+  insertarLocalsDB7 :: Database.HDBC.SqlValue.SqlValue
+  {- Unfolding: (case Data.Convertible.Instances.Num.$fConvertibleIntInt64_$csafeConvert
+                        DataBaseLocals.insertarLocalsDB8 of wild {
+                   Data.Either.Left l
+                   -> case l of ww { Data.Convertible.Base.ConvertError ww1 ww2 ww3 ww4 ->
+                      Data.Convertible.Base.convert2
+                        @ Database.HDBC.SqlValue.SqlValue
+                        ww1
+                        ww2
+                        ww3
+                        ww4 }
+                   Data.Either.Right r -> Database.HDBC.SqlValue.SqlInt64 r }) -}
+02e57090a181228186523c7d37f7ffca
+  insertarLocalsDB8 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1235375940) -}
+de4cec821d92ee25b94e351848fa5baf
+  insertarLocalsDB9 :: [[Database.HDBC.SqlValue.SqlValue]]
+  {- Unfolding: (GHC.Types.:
+                   @ [Database.HDBC.SqlValue.SqlValue]
+                   DataBaseLocals.insertarLocalsDB10
+                   (GHC.Types.[] @ [Database.HDBC.SqlValue.SqlValue])) -}
+4d967da4512938de5710174ddf2bdcef
+  tablaLocalsDB :: GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.tablaLocalsDB1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0]
+                          <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+44cc63ea7c064c32b87c366c5e9c0dcf
+  tablaLocalsDB' :: GHC.Types.IO [[Database.HDBC.SqlValue.SqlValue]]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                DataBaseLocals.tablaLocalsDB'1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0]
+                          <[[Database.HDBC.SqlValue.SqlValue]]>_R)) -}
+777331e581d01bce894075382219711c
+  tablaLocalsDB'1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 1, Strictness: <L,U> -}
+e528112a6aa93d7b1cf39b287f9949ed
+  tablaLocalsDB1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.HDBC.SqlValue.SqlValue]] #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        DataBaseLocals.tablaLocalsDB2
+                        GHC.Types.False
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Internals.wantReadableHandle_1
+                        @ GHC.Base.String
+                        GHC.IO.Handle.Text.hGetLine4
+                        GHC.IO.Handle.FD.stdin
+                        GHC.IO.Handle.Text.hGetLine2
+                          `cast`
+                        (<GHC.IO.Handle.Types.Handle__>_R
+                         ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R))
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case (Database.HDBC.Sqlite3.Connection.genericConnect
+                         Database.HDBC.Sqlite3.Connection.connectSqlite1
+                           `cast`
+                         (<GHC.Base.String>_R
+                          ->_R <Foreign.C.String.CString
+                                -> GHC.Types.IO Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0]
+                                        <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R))
+                         DataBaseLocals.actualizarLocalsDB3)
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Database.HDBC.Sqlite3.ConnectionImpl.Connection>_R)
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case Database.HDBC.Utils.quickQuery'1
+                        @ Database.HDBC.Sqlite3.ConnectionImpl.Connection
+                        Database.HDBC.Sqlite3.ConnectionImpl.$fIConnectionConnection
+                        ipv5
+                        (GHC.CString.unpackAppendCString# "SELECT * FROM "# ipv3)
+                        (GHC.Types.[] @ Database.HDBC.SqlValue.SqlValue)
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case ipv5 of wild { Database.HDBC.Sqlite3.ConnectionImpl.Connection ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ->
+                 case ds5 `cast` (GHC.Types.NTCo:IO[0] <()>_R)
+                        ipv6 of ds21 { (#,#) ipv8 ipv9 ->
+                 (# ipv8, ipv7 #) } } } } } }) -}
+9530aea85a5f1c239dc91b7129ba51c8
+  tablaLocalsDB2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Nombre de la tabla: "#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
